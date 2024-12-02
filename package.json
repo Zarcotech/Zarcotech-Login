@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "@astrajs/collections": "^0.3.4",
+    "cassandra-driver": "^4.7.2",
+    "express": "^4.21.1",
+    "mysql2": "^3.11.4"
+  }
+}
