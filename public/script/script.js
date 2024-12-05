@@ -1,11 +1,24 @@
-fetch('/api/users')
-.then(response => response.json())
-.then(data => {
-  const usersList = document.getElementById('users-list');
-  data.forEach(user => {
-    const listItem = document.createElement('li');
-    listItem.textContent = `${user.first_name} ${user.last_name}`;
-    usersList.appendChild(listItem);
-  });
-})
-.catch(error => console.error('Error fetching data:', error));
+function checkLogin() {
+  const username = document.getElementById('username').value;
+  const password = document.getElementById('password').value;
+
+  fetch('/api/login', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      username: username,
+      password: password
+    })
+  })
+  .then(response => response.json())
+  .then(data => {
+    if (data.success) {
+      window.location.href = '../static/loggedIn.html';
+    } else {
+      alert(data.message || 'Login failed');
+    }
+  })
+  .catch(error => console.error('Error:', error));
+}

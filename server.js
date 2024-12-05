@@ -4,11 +4,13 @@ const path = require('path');
 const app = express();
 const port = 3000;
 
+app.use(express.json());
+
 const db = mysql.createConnection({
   host: 'localhost',
   user: 'root',
-  password: '',
-  database: 'your_database_name'
+  password: 'admin_zidan1234',
+  database: 'Zarcotech_users'
 });
 
 db.connect((err) => {
@@ -31,12 +33,32 @@ app.get('/api/users', (req, res) => {
   });
 });
 
+app.post('/api/login', (req, res) => {
+  const { username, password } = req.body;
+  
+  const query = 'SELECT * FROM users WHERE username = ? AND password = ?';
+  
+  db.query(query, [username, password], (err, results) => {
+    if (err) {
+      console.error('Error checking credentials:', err);
+      res.status(500).json({ message: 'Error checking credentials' });
+      return;
+    }
+
+    if (results.length > 0) {
+      res.json({ success: true });
+    } else {
+      res.json({ success: false, message: 'Invalid username or password' });
+    }
+  });
+});
+
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'index.html'));
 });
 
-app.listen(port, () => {
+app.listen(port, '0.0.0.0',() => {
   console.log(`Server running on http://localhost:${port}`);
 });
