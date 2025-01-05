@@ -6,7 +6,7 @@ error_reporting(E_ALL);
 session_start();
 
 $servername = "localhost;
-$port = "81";
+$port = "3305";
 $username = "root";
 $password = "zidan123";
 $dbname = "Zarcotech_Users";
