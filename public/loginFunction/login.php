@@ -5,7 +5,7 @@ error_reporting(E_ALL);
 
 session_start();
 
-$servername = "72.182.100.189";
+$servername = "localhost;
 $port = "81";
 $username = "root";
 $password = "zidan123";
