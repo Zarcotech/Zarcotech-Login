@@ -43,7 +43,7 @@
               <label for="password">Password</label>
           </div>
           <p class="recover">
-            <a href="#">Recover Password</a>
+            <a href="404.html">Recover Password</a>
           </p>
          <input type="submit" class="btn" value="Sign In" name="signIn">
         </form>
