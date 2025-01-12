@@ -13,7 +13,7 @@ body{
     padding:1.5rem;
     margin:50px auto;
     border-radius:10px;
-    box-shadow:0 10px rgba(0,0,1,0.9);
+    border: 3px black solid;
 }
 form{
     margin:0 2rem;
