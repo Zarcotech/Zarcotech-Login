@@ -33,7 +33,7 @@
         <h1 class="form-title">Login</h1>
         <form method="post" action="register.php">
           <div class="input-group">
-              <i class="fas fa-envelope"></i>
+              <i class="fas fa-user"></i>
               <input type="text" name="username" id="username" placeholder="Username" required>
               <label for="username">Username</label>
           </div>
