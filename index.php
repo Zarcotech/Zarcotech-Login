@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="container" id="signUp" class="signup">
-      <h1 class="form-title">Register</h1>
+      <h1 class="form-title">Sign Up</h1>
       <form method="post" action="register.php">
         <div class="input-group">
            <i class="fas fa-user"></i>
@@ -30,7 +30,7 @@
     </div>
 
     <div class="container" id="signIn">
-        <h1 class="form-title">Sign In</h1>
+        <h1 class="form-title">Login</h1>
         <form method="post" action="register.php">
           <div class="input-group">
               <i class="fas fa-envelope"></i>

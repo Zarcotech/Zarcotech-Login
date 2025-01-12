@@ -5,8 +5,7 @@
     font-family:"poppins",sans-serif;
 }
 body{
-    background-color: #c9d6ff;
-    background:linear-gradient(to right,#e2e2e2,#c9d6ff);
+    background-color: white;
 }
 .container{
     background:#fff;
@@ -14,7 +13,7 @@ body{
     padding:1.5rem;
     margin:50px auto;
     border-radius:10px;
-    box-shadow:0 20px 35px rgba(0,0,1,0.9);
+    box-shadow:0 10px rgba(0,0,1,0.9);
 }
 form{
     margin:0 2rem;
@@ -73,7 +72,7 @@ input:focus~label,input:not(:placeholder-shown)~label{
 }
 .recover a{
     text-decoration:none;
-    color:rgb(125,125,235);
+    color:green;
 }
 .recover a:hover{
     color:blue;
@@ -86,13 +85,13 @@ input:focus~label,input:not(:placeholder-shown)~label{
     outline:none;
     border:none;
     width:100%;
-    background:rgb(125,125,235);
+    background: green;
     color:white;
     cursor:pointer;
     transition:0.9s;
 }
 .btn:hover{
-    background:#07001f;
+    background: rgb(6, 78, 6);
 }
 .or{
     font-size:1.1rem;
@@ -111,7 +110,7 @@ input:focus~label,input:not(:placeholder-shown)~label{
     font-weight:bold;
 }
 button{
-    color:rgb(125,125,235);
+    color:green;
     border:none;
     background-color:transparent;
     font-size:1rem;
