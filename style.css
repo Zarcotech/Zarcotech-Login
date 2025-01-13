@@ -14,7 +14,7 @@ body{
     margin:50px auto;
     border-radius:10px;
     border: 0.5px black solid;
-    margin-top: 40vh;
+    padding: 50px;
 }
 form{
     margin:0 2rem;
