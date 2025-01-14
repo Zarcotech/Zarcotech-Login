@@ -42,17 +42,18 @@ include 'connect.php';
 </head>
 <body>
     <div class="container">
-        <h1>🚧 Under Construction 🚧</h1>
-        <p>Hello <?php 
-        
-        if (isset($_SESSION['username'])) {
-            echo $_SESSION['username'];
-        } else {
-            echo "there";
-        }
+        <h1>
+            Welcome <?php 
+            
+            if (isset($_SESSION['username'])) {
+                echo $_SESSION['username'];
+            } else {
+                echo "";
+            }
 
-        ?></p>
-        <p>We're working hard to bring you something amazing. Please check back soon!</p>
+            ?>
+        </h1>
+        <p>Please stay patient, as we are still setting up this website for you.</p>
         <form action="logout.php">
             <input type="submit" value="Logout">
         </form>
