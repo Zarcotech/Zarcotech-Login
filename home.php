@@ -1,3 +1,12 @@
+<?php
+
+session_start();
+include 'connect.php';
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,17 +42,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>
-            Welcome, <?php 
-        
-        if (isset($_SESSION['username'])) {
-            echo $_SESSION['username'];
-        } else {
-            echo "there";
-        }
-        !
-        ?>
-        </h1>
+        <h1>🚧 Under Construction 🚧</h1>
         <p>Hello <?php 
         
         if (isset($_SESSION['username'])) {
